@@ -19,7 +19,7 @@ resource "aws_instance" "example2" {
 }
 
 
-resource "aws_s3_bucket" "example3" {
+resource "aws_s3_bucket" "example1" {
   bucket = "my-tf-test-bucket"
 
   tags = {
