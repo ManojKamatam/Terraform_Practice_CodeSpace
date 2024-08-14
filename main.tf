@@ -18,12 +18,19 @@ resource "aws_instance" "example2" {
   provider = aws.us-west-2
 }
 
-
 resource "aws_s3_bucket" "example1" {
   bucket = "my-tf-test-bucket"
 
   tags = {
     Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+resource "aws_s3_bucket" "example2" {
+  bucket = "my-tf-test-bucket-1"
+
+  tags = {
+    Name        = "My bucket-1"
     Environment = "Dev"
   }
 }
