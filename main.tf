@@ -25,7 +25,9 @@ resource "aws_s3_bucket" "example1" {
     Name        = "My bucket"
     Environment = "Dev"
   }
+provider = aws.us-west-2
 }
+
 resource "aws_s3_bucket" "example2" {
   bucket = "my-tf-test-bucket-1"
 
@@ -33,4 +35,5 @@ resource "aws_s3_bucket" "example2" {
     Name        = "My bucket-1"
     Environment = "Dev"
   }
+provider = aws.us-east-1
 }
