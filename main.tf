@@ -17,3 +17,13 @@ resource "aws_instance" "example2" {
   instance_type           = "t2.micro"
   provider = aws.us-west-2
 }
+
+
+resource "aws_s3_bucket" "example3" {
+  bucket = "my-tf-test-bucket"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
