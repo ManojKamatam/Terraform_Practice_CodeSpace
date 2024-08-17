@@ -1,1 +1,1 @@
-bucket_name = "terraform-statefile"
+bucket_name = "terraform-tatefile"
