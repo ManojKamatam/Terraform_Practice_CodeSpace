@@ -8,7 +8,7 @@ module "Variables_Modules" {
   instance_type_value = "t2.micro"
 }
 
-module "s3_bucket" {
+/*module "s3_bucket" {
     source = "./s3_bucket"
     bucket_name = "terraform-statefile"  
-}
+}*/
