@@ -10,5 +10,5 @@ provider "aws" {
 
 module "s3_bucket" {
     source = "./s3_bucket"
-    bucket_name = "terraform-tatefile"  
+    bucket_name = "terraform-tatefile-1"  
 }
