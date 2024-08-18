@@ -14,7 +14,7 @@ resource "aws_vpc" "main" {
 
 resource "aws_key_pair" "key_pair" {
   key_name   = "key_pair"
-#public_key = file("/home/codespace/.ssh/id_rsa.pub")
+  #public_key = file("/home/codespace/.ssh/id_rsa.pub")
   public_key = file("C:/Users/akula/.ssh/id_rsa.pub")
   tags = {
     Name = "Main_key"
@@ -100,7 +100,7 @@ resource "aws_instance" "server" {
   connection {
     type        = "ssh"
     user        = "ubuntu"  # Replace with the appropriate username for your EC2 instance
-  #private_key = file("/home/codespace/.ssh/id_rsa")  # Replace with the path to your private key
+    #private_key = file("/home/codespace/.ssh/id_rsa")  # Replace with the path to your private key
     private_key = file("C:/Users/akula/.ssh/id_rsa")
     host        = self.public_ip
   }
