@@ -13,3 +13,5 @@ git commit -m "Updated files with Terraform changes"
 (or)
 
 git push origin main
+
+To have multiple tfvars, terraform apply -var-file = filename.tfvars
