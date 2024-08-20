@@ -1,7 +1,4 @@
-# CIDR block for the stage environment VPC
 stage_cidr = "10.1.0.0/16"
-
-# IAM Role for stage environment
 stage_role_policy = <<EOF
 {
   "Version": "2012-10-17",
